@@ -65,3 +65,14 @@ button:hover{
 p{
     width:600px;
 }
+
+@media (max-width:768px) {
+    body{width:95%;}
+    h1{font-size:24px;}
+    .inputs{width:100%;}
+    table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+}
