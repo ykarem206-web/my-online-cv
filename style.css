@@ -69,18 +69,11 @@ p{
 @media (max-width:678px) {
     body{width:95%;}
     p{width:300px;}
-    h1{font-size:24px;
-      width:100%;}
+    h1{font-size:24px;}
     .inputs{width:100%;}
     table{
-        /* display:block; */
-        overflow-x:hidden;
-        /* white-space:nowrap; */
+/*        display:block;*/
+        overflow-x:auto;
+/*        white-space:nowrap;*/
     }
-    }
-
-
-
-
-
-
+}
