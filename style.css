@@ -66,10 +66,9 @@ p{
     width:600px;
 }
 
-@media (max-width:300px) {
-    body{
-        width:95%;
-    overflow-x:hidden;}
+@media (max-width:678px) {
+    body{width:95%;}
+    p{width:300px;}
     h1{font-size:24px;}
     .inputs{width:100%;}
     table{
@@ -77,8 +76,8 @@ p{
         overflow-x:hidden;
         /* white-space:nowrap; */
     }
+    }
 
-}
 
 
 
