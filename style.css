@@ -67,13 +67,16 @@ p{
 }
 
 @media (max-width:768px) {
-    body{width:95%;}
+    body{
+        width:95%;
+    overflow-x:hidden;}
     h1{font-size:24px;}
     .inputs{width:100%;}
     table{
-        display:block;
+        /* display:block; */
         overflow-x:hidden;
-        white-space:nowrap;
+        /* white-space:nowrap; */
     }
 
 }
+
