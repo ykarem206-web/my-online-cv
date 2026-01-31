@@ -72,7 +72,8 @@ p{
     .inputs{width:100%;}
     table{
         display:block;
-        overflow-x:auto;
+        overflow-x:hidden;
         white-space:nowrap;
     }
+
 }
