@@ -66,9 +66,9 @@ p{
     width:600px;
 }
 
-@media (max-width:430px) {
+@media (max-width:300px) {
     body{
-        width:80%;
+        width:95%;
     overflow-x:hidden;}
     h1{font-size:24px;}
     .inputs{width:100%;}
@@ -79,6 +79,7 @@ p{
     }
 
 }
+
 
 
 
