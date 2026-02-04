@@ -1,79 +1,189 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Acme", sans-serif;
+    scroll-behavior:smooth;
 }
-body {
-    font-family:"Roboto", sans-serif;
-    width:80%;
-    margin:0 auto;
-    max-width:1000px;
-    padding:20px;
+/* header */
+.header{
+    width:100%;
+    height:740px;
 }
-h1 {
-    color:gold;
-    background-color: gray;    
+.navbar{
+    width:100%;
+    height:10%;
+    display:flex;
 }
-.avatar{
+.logo {
+    width: 50%;
+    height: 100%;
+    font-size: 40px;
+    padding: 10px 70px;
+    font-family: "Pacifico", cursive;
+}
+.aboutme {
+    width: 100%;
+    height: 90%;
+    display:flex;
+}
+.avatar {
+    width: 50%;
+    height: 100%;
+
+}
+.avatar img {
+    background-color: aqua;
+    width: 50%;
+    height: 50%;
     border-radius:50%;
-    margin-top:10px;
-    object-fit:cover;
+    margin:100px 60px;
+    box-shadow:darkgray 5px 10px 10px;
 }
-header {
-    text-align: center;
+.about {
+    width: 50%;
+    height: 100%;
 }
-.links:hover{
-    color:red;
+.about h1{
+    margin:150px 0 0 60px;
+    font-size:50px;
 }
-section{
-    padding:10px;
+.about h2{
+    margin:10px 0 0 60px;
 }
-h2{
+.about a{
+    margin:10px 0 0 60px;
+    font-size:40px;
+    color:dimgray;
+    transition:0.3s color;
+}
+.about .linkedin{
+    margin:10px 0 0 20px;
+    font-size:40px;
+}
+.about a:hover {
     color:blue;
 }
-table{
-    border-collapse:collapse;
+    /* end header */
+    /* nav bar */
+    .nav {
+        width: 50%;
+        height: 100%;
+        font-family: "Acme", sans-serif;
+        font-size: 24px;
+    }
+.nav ul li{
+    float:left;
+    list-style-type:none;
+    margin:35px 70px;
+}
+.nav ul li a{
+    text-decoration:none;
+    color:black;
+    transition:0.3s color;
+}
+.nav ul li a:hover {
+        color:cadetblue;
+}
+/* end nav bar */
+
+/* project section */
+.projects{
     width:100%;
-    table-layout:fixed;
+    height:700px;
+    background-color:#e5e5e5;
+    overflow:hidden;
+}
+.project-text{
     text-align:center;
+    margin:50px 0;
+    height:20%;
 }
-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+.project-text h1{
+    font-size:60px;
 }
-table thead {
-    background-color: #333;
-    color:white;
+.project-text h1::first-letter{
+    color:cadetblue;
 }
-button {
-    background-color: cadetblue;
-    color: white;
-    border: none;
-    width: auto;
-    border-radius: 5px;
-    padding: 10px 30px;
+.content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height:80%;
 }
-button:hover{
-    background-color:#555;
-    cursor:pointer;
+.item{
+    width:20%;
+    height:50%;
+    overflow:hidden;
+    transition:0.5s transform;
+    position:relative;
 }
-.inputs{
-    padding:10px;
-    border-radius:5px;
-    margin-bottom:10px;
-    width:300px;
+.item img{
+    width:100%;
+    height:100%;
 }
-p{
-    width:600px;
+.item h2{
+    margin-top:-20%;
+    margin-left:30%;
+    position:absolute;
+    font-size:50px;
+    transition:0.5s transform;
+}
+.item:hover{
+    transform:scale(1.1, 1.1)
+}
+.item:hover h2{
+    margin-top:40%;
+    color:cadetblue;
 }
 
-@media (max-width:678px) {
-    body{width:95%;}
-    p{width:300px;}
-    h1{font-size:24px;}
-    .inputs{width:100%;}
-    table{
-/*        display:block;*/
-        overflow-x:auto;
-/*        white-space:nowrap;*/
-    }
+/* end project section */
+
+/* contact section */
+.contact{
+    width:100%;
+/*    height:700px;*/
+}
+.contact h1{
+    font-size:60px;
+    text-align:center;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.contact h1::first-letter{
+    color:cadetblue;
+}
+.form{
+    width:60%;
+    margin:auto;
+}
+input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+textarea {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+button{
+    margin-top:10px;
+    border:none;
+    padding:10px 20px;
+    background-color:darkslategray;
+    color:white;
+}
+button:hover{
+    background-color:blue;
+}
+.map{
+    margin-top:30px;
+}
+footer{
+    text-align:center;
 }
