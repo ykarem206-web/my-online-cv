@@ -1,95 +1,88 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-    <title>online cv</title>
-    <meta name="viewport"
-    content="width=device-width,
-    initial-scale=1.0"/>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <title>Portfolio</title>
+        <link href="style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+
     <body>
-        <header>
-            <h1>Yousef Kareem Azmi Abdalsalam</h1>
-            <img src="photo_2026-01-19_18-35-44.jpg" width="150" height="150" class="avatar"/>
+        <!-- start header -->
+        <header class="header" id="header">
+            <!-- start nav bar -->
+            <nav class="navbar">
+
+                <div class="logo"> Yousef Kareem </div>
+                <div class="nav">
+                    <ul>
+                        <li> <a href="#header">About Me</a> </li>
+                        <li> <a href="#projects">Project</a> </li>
+                        <li> <a href="#contact">Contact</a> </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- end nav bar -->
+            <!-- start about me -->
+            <div class="aboutme">
+                <div class="avatar">
+                    <img src="IMG_9153.PNG" alt="yousef kareem"/>
+                </div>
+                <div class="about">
+                    <h1>HI<br />My Name Is Yousef Kareem</h1>
+                    <h2>Front-End Web Developer</h2>
+                    <h2>Student At Faculity Of Petroleum And Mininig Engineering</h2>
+                    <a href="https://www.facebook.com/share/1CgvzrtwF1/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <!-- start about me -->
+
         </header>
-        
-        <nav>
-            <section>
-            <h2>About Me</h2>
-                <p>I am <b>20</b> years old and <b>student</b> at faculity of petroleum and mining engineering.<br /> I study at petroleum 
-                and gas engineering <i>department</i>. </p>
-            </section>
-
-            <section>
-                <h2>Education & Experience</h2>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Certificate</th>
-                            <th>From</th>
-                            <th>Year</th>
-                            <th>Grade</th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td>secondary</td>
-                        <td>Secondary School</td>
-                        <td>2024</td>
-                        <td>excellent</td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Yanfaa</td>
-                        <td>2026</td>
-                        <td>excellent</td>
-                    </tr>
-                    <tr>
-                        <td>css</td>
-                        <td>Yanfaa</td>
-                        <td>2026</td>
-                        <td>excellent</td>
-                    </tr>
-                </table>
-            </section>
-
-            <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Problem Solving</li>
-                <li>Excel</li>
-            </ul>
-            </section>
-
-            <section>
-                <h2>Contact Me</h2>
+        <!-- end header -->
+        <!-- start project -->
+        <section class="projects" id="projects">
+            <div class="project-text">
+                <h1>Projects</h1>
+                <h3>This is my projects</h3>
+            </div>
+            <div class="content">
+                <div class="item">
+                    <h2>Project1</h2>
+                    <img src="Screenshot 2026-02-04 025347.png" alt="project"/>
+                </div>
+                <div class="item">
+                    <h2>Project2</h2>
+                    <img src="Screenshot 2026-02-04 025347.png" alt="project" />
+                </div>
+                <div class="item">
+                    <h2>Project3</h2>
+                    <img src="Screenshot 2026-02-04 025347.png" alt="project" />
+                </div>
+            </div>
+        </section>
+        <!-- end project -->
+        <!-- start contact -->
+        <section class="contact" id="contact">
+            <div class="form">
+               <h1>Contact</h1>
                 <form>
-                    <label>Name</label>
-                    <input type="text" class="inputs"/>
-                    <br /> <br />
-                    <label>Email</label>
-                    <input type="email" class="inputs"/>
-                    <br /> <br />
-                    <textarea class="inputs"></textarea>
-                    <br /> <br />
+                    <input type="text" placeholder="Name"/>
+                    <input type="email" placeholder="Email"/>
+                    <textarea name="message" placeholder="Message"></textarea>
                     <button>Send</button>
-                    <br /> <br />
-                    <a href="https://www.facebook.com/share/1CgvzrtwF1/?mibextid=wwXIfr" target="_blank" class="links">Facebook</a>
                 </form>
-            </section>
-        </nav>
-
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d13756.630442244565!2d31.388466549999997!3d30.459973599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sar!2seg!4v1770207912337!5m2!1sar!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <!-- end contact -->
+        <!-- start footer -->
         <footer>
-            <br />
-            Yousef Kareem 2026 &copy;
+            Yousef Kareem &copy;
         </footer>
+        <!-- end footer -->
 
     </body>
-
 
 </html>
